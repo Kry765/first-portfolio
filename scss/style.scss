@@ -1,0 +1,121 @@
+@import './_color';
+@import './_reset';
+
+//========================================NAVIGATION=================================================================
+
+.nav{
+	position: fixed;
+	background-color: rgba(0,0,0, 0.3);
+	width: 100%;
+	z-index: 3;
+	.nav-item
+	{
+		padding: 10px 15px;
+		display: none;
+	}
+	.mobile-burger-bar
+	{
+		display: block;
+	}
+}
+
+.nav-link:hover{
+	color: $red;
+}
+
+.dropdown-menu{
+	width:100vh;
+	background-color: rgba(0,0,0, 0.3);
+}
+
+//========================================HEADER=================================================================
+
+.header{
+	position: relative;
+	top: 0;
+	.opacity-picture{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0,0,0, 0.7);
+		z-index: 1;
+	}
+	.welcome-picture{
+		text-align: center;
+		background-size: cover;
+		background-image: url('../img/laptop_big.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100vh;
+		color: $white;
+		font-size: 16px;
+		.title-h1
+			{
+			font-size: 36px;
+			z-index: 1;
+			text-transform: uppercase;
+			}
+			.title-text
+			{
+				z-index: 1;
+			}
+	}
+}
+
+.flexbox-center{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.underline{
+	height: 10px;
+	width: 40%;
+	background-color: $dark;
+}
+//========================================SKILLS=================================================================
+
+
+
+//========================================FOOTER=================================================================
+.footer{
+	background-color: black;
+	color: $white;
+	min-height: 50vh;
+	width: 100%;
+	font-size: 16px;
+}
+
+.bottom-section-footer{
+    text-align: center;
+	padding: 16px;
+	color: #fff;
+}
+
+.footer-icon:hover{
+	color: $red;
+}
+//========================================BREAKPOINT=================================================================
+@media(min-width: 576px){
+	.welcome-picture{
+		background-image: url('	../img/laptop_very_small.jpg');
+	}
+}
+
+@media(min-width: 1200px){
+	.welcome-picture{
+		background-image: url('../img/laptop_small.jpg');
+	}
+}
+
+@media(min-width: 576px){
+	.nav{
+			.nav-item{
+				display: block;
+			}
+			.mobile-burger-bar{
+				display: none;
+			}
+		}
+}
