@@ -12,6 +12,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   z-index: 3;
+  font-weight: bold;
 }
 
 .nav .nav-item {
@@ -107,16 +108,25 @@
   min-height: 50vh;
   width: 100%;
   font-size: 16px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.bottom-section-footer {
+.footer .bottom-section-footer {
   text-align: center;
-  padding: 16px;
+  padding: 20px;
+  font-size: 20px;
   color: #fff;
 }
 
-.footer-icon:hover {
+.footer .bottom-section-footer .footer-icon {
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.footer .footer-icon:hover {
   color: #9c1f1f;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
