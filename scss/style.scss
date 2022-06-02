@@ -43,6 +43,7 @@
 		z-index: 1;
 	}
 	.welcome-picture{
+		position: relative;
 		text-align: center;
 		background-size: cover;
 		background-image: url('../img/laptop_big.jpg');
@@ -60,6 +61,17 @@
 			.title-text
 			{
 				z-index: 1;
+			}
+			.fa-chevron-down{
+				position: absolute;
+				bottom: 0;
+				padding: 20px;
+				font-size: 36px;
+				z-index: 1;
+				color: #fff;
+			}
+			.fa-chevron-down:hover{
+				cursor: pointer;
 			}
 	}
 }
